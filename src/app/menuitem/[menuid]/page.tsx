@@ -7,7 +7,7 @@ interface pageProps {
 }
 
 const page = async ({ params }: pageProps) => {
-    const { menuid } = await params;
+    const { menuid } = params;
     if (menuid) {
         return <div>
             <MenuItems id={menuid} />
